@@ -4,6 +4,29 @@ header {
    background: $color-dark;
    position: relative;
    top: 0; right: 0; left: 0; bottom: 0;
+   .nav {
+      display: flex;
+      justify-content: space-between;
+      padding:2rem 0;
+      font-size: 2rem;
+      position: fixed;
+      top: 0; right: 0; left: 0; bottom: 0;
+      &__logo--item {
+         font-weight: bold;
+         background: $color-accent;
+         padding: 5px;
+      }
+      &__list {
+         .hamburger {
+            text-align: right;
+            width: 100%;
+         }
+         &--item {
+            padding-bottom: 5rem ;
+         }
+      }
+      
+   }
    .hero { //title
       width: 60%;
       margin: 0 auto;
@@ -38,3 +61,16 @@ header {
       transform: skewY(-5deg);
    }
 }
+
+//hamburger
+
+#hamburger {
+   display:none;
+}
+#hamburger:checked ~ li {
+   display: none;
+}
+
+
+// ========== RESPONSIVE STYLES =========
+

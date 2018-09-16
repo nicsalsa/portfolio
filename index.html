@@ -13,9 +13,17 @@
 <body>
     <!-- ========HEADER BEGINS HERE======== -->
     <header>
-        <nav class="nav fontAccent wrapper">
-            <p class="logo"> ns </p>
+        <nav class="nav fontAccent wrapperNav">
+            <a href="#" class="nav__logo">
+                <!-- <div > -->
+                    <p class="nav__logo--item white"> ns </p>
+                <!-- </div> -->
+            </a>
             <ul class="nav__list">
+                <label for="hamburger">
+                    <i class="hamburger fas fa-bars"></i>
+                </label>
+                <input type="checkbox" id="hamburger" checked>
                 <li class="nav__list--item"><a href="#">home</a></li>
                 <li class="nav__list--item"><a href="#">about</a></li>
                 <li class="nav__list--item"><a href="#">skills</a></li>
@@ -40,8 +48,11 @@
         <!-- about section begins -->
         <section class="about block wrapper">
             <div class="block__title">
-                <p class="block__title--description">who am i</p>
-                <h2 class="block__title--heading uppercase">hello</h2>
+                <div class="block__title--subtitle">
+                    <hr class="block__title--subtitle--line">
+                    <p class="block__title--subtitle--description">who am i</p>
+                    <h2 class="block__title--subtitle--heading uppercase">hello</h2>
+                </div>
             </div>
             <figure class="block__fig">
                 <!-- <img src="./src/assets/bootcampHeadshot4 copy.jpg" alt="Headshot of Nicole Salceda sitting in HackerYou red armchair" class="block__fig--image"> -->
@@ -148,6 +159,7 @@
 
     </footer>
     <!-- ======== FOOTER ENDS ============ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="public/scripts/app.js"></script>
 </body>
 </html>
