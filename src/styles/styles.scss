@@ -1,7 +1,17 @@
-//fonts 
-    //font-family: 'Montserrat', sans-serif;
-    //font-family: 'Playfair Display', serif;
+// IMPORT PARTIALS
+@import 'partials/_utils.scss';
+@import 'partials/_typography.scss';
+@import 'partials/_setup.scss';
+@import 'partials/_global.scss';
+@import 'partials/_header.scss';
+@import 'partials/_about.scss';
+@import 'partials/_skillset';
+@import 'partials/_portfolio.scss';
+@import 'partials/_footer.scss';
 
-body {
-    // background: red;
-}
+
+
+
+
+
+

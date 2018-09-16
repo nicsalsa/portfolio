@@ -1,0 +1,18 @@
+
+body {
+    background: #fff;
+    font-family: $font-sansSerif;
+}
+.wrapper {
+   max-width: 1280px;
+   width: 80%;
+   margin: 0 auto;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+li {
+   list-style-type: none;
+}

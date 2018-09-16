@@ -12,50 +12,112 @@
 </head>
 <body>
     <!-- ========HEADER BEGINS HERE======== -->
-    <header class="hero">
-        <h1 class="hero__name uppercase">
-            Nicole 
-            <span class="hero__name--lastName uppercase">
-                Salceda
-            </span>
+    <header>
+        <nav class="nav fontAccent wrapper">
+            <p class="logo"> ns </p>
+            <ul class="nav__list">
+                <li class="nav__list--item"><a href="#">home</a></li>
+                <li class="nav__list--item"><a href="#">about</a></li>
+                <li class="nav__list--item"><a href="#">skills</a></li>
+                <li class="nav__list--item"><a href="#">work</a></li>
+                <li class="nav__list--item"><a href="">contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1 class="hero__name white uppercase">
+                Nicole 
+                <span class="hero__name--lastName uppercase">
+                    Salceda
+                </span>
+            </h1>
             <p class="fontAccent hero__name--text">Web Developer</p>
-        </h1>
+        </div>
+        <div class="skew"></div>
     </header>
     <!-- ======== HEADER ENDS ===========-->
     <!-- ======== MAIN SECTION BEGINS ========== -->
     <main>
         <!-- about section begins -->
-        <section class="about block">
+        <section class="about block wrapper">
             <div class="block__title">
                 <p class="block__title--description">who am i</p>
                 <h2 class="block__title--heading uppercase">hello</h2>
             </div>
             <figure class="block__fig">
-                <img src="./src/assets/bootcampHeadshot4 copy.jpg" alt="Headshot of Nicole Salceda sitting in HackerYou red armchair" class="block__fig--image">
-                <figcaption class="block__figcap">I'm a Web Developer, based in Toronto, Lorem ipsum, dolor sit amet consectetur adipisicing elit. In labore illo optio vel neque sapiente, autem nihil at aliquid consectetur eius officiis doloremque eum, nulla quae quibusdam, saepe minima excepturi iste nemo hic fugiat quia? Quo eveniet molestiae excepturi magni! Perspiciatis, dolores est? Repellat sit, facere ab enim reiciendis ad!</figcaption>
+                <!-- <img src="./src/assets/bootcampHeadshot4 copy.jpg" alt="Headshot of Nicole Salceda sitting in HackerYou red armchair" class="block__fig--image"> -->
+                <figcaption class="block__fig__figcap">
+                    <h3 class="block__fig__figcap--heading">
+                        I'm a Web Developer, based in Toronto, Lorem ipsum, dolor sit amet consectetur adipisicing elit. In labore illo optio vel neque sapiente.
+                    </h3>
+                    <p class="block__fig__figcap--text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia architecto suscipit recusandae, quidem est rem sunt, aspernatur facilis, ullam culpa velit repellendus eius debitis totam ipsum. Mollitia nihil maiores quam?
+                    </p>
+                </figcaption>
             </figure>
 
         </section>
         <!-- about section ends  -->
-
         <!-- skillset section begins -->
-        <section class="skillset">
+        <section class="skillset wrapper">
+            <i class="fab fa-react"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <div class="skillset__jquery">
+                <!-- <img src="./src/assets/noun_jquery_414780.svg" alt="Jquery logo"> -->
+            </div>
 
         </section>
         <!-- skillset section ends -->
-
         <!-- portfolio section begins -->
-        <section class="portfolio">
-
+        <section class="portfolio block wrapper">
+            <div class="block__title">
+                <p class="block__title--description">awesome projects</p>
+                <h2 class="block__title--heading uppercase">my work</h2>
+            </div>
+            <!-- portfolio piece #1 -->
+            <figure class="block__fig">
+                <div class="block__img"></div>
+                <figcaption class="block__fig__figcap">
+                    <h3 class="block__fig__figcap--heading">
+                        My first portfolio piece
+                    </h3>
+                    <p class="block__fig__figcap--text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia architecto suscipit recusandae, quidem est rem sunt, aspernatur.
+                    </p>
+                </figcaption>
+            </figure>
+            <!-- portfolio piece #2 -->
+            <figure class="block__fig">
+                <div class="block__img"></div>
+                <figcaption class="block__fig__figcap">
+                    <h3 class="block__fig__figcap--heading">
+                        My second portfolio piece
+                    </h3>
+                    <p class="block__fig__figcap--text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia architecto suscipit recusandae, quidem est rem sunt, aspernatur.
+                    </p>
+                </figcaption>
+            </figure>
+            <!-- portfolio piece #3 -->
+            <figure class="block__fig">
+                <div class="block__img"></div>
+                <figcaption class="block__fig__figcap">
+                    <h3 class="block__fig__figcap--heading">
+                        My third portfolio piece
+                    </h3>
+                    <p class="block__fig__figcap--text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia architecto suscipit recusandae, quidem est rem sunt, aspernatur.
+                    </p>
+                </figcaption>
+            </figure>
         </section>
         <!-- portfolio section ends -->
-
     </main>
     <!-- ======== MAIN SECTION ENDS ============ -->
     <!-- ======== FOOTER BEGINS ============ -->
     <footer>
         <!-- contact section begins -->
-        <section class="contact">
+        <section class="contact wrapper">
             <form action="GET" class="contact__form">
                 <label for="name">Name</label>
                 <input class="contact__form--name" type="text" placeholder="Name">
@@ -71,7 +133,7 @@
                 <input class="btn fontAccent" type="submit" value="SEND">
             </form>
         </section>
-        <section class="info">
+        <section class="info wrapper">
             <div class="info__signature">
                 <p class="info__signature--email">ensalced@gmail.com</p>
                 <p class="info__signature--phone">647-555-5555</p>
@@ -81,11 +143,11 @@
                 <i class="fab fa-medium-m fontAccent"></i>
                 <i class="fab fa-linkedin-in fontAccent"></i>
             </div>
+            <p class="info__copyright">© Nicole Salceda 2018</p>
         </section>
 
     </footer>
     <!-- ======== FOOTER ENDS ============ -->
-    <h1>Nicole Salceda</h1>
     <script src="public/scripts/app.js"></script>
 </body>
 </html>

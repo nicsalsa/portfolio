@@ -1,0 +1,17 @@
+//  TYPOGRAPHY STYLES
+
+//fonts 
+    //font-family: 'Montserrat', sans-serif;
+    //font-family: 'Playfair Display', serif;
+h1 {
+   font-family: $font-sansSerif;
+}
+.white {
+   color: #fff;
+}
+.fontAccent {
+    color: #EF619C;
+}
+.uppercase {
+   text-transform: uppercase;
+}

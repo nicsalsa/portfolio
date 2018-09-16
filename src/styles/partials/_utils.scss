@@ -1,0 +1,32 @@
+//  UTILS
+
+// =========== VARIABLES ===========
+//fonts
+$font-serif: 'Playfair Display', serif;
+$font-sansSerif: 'Montserrat', sans-serif;
+
+//color
+$color-accent: #F4588A;
+$color-dark: #443D89;
+$color-offwhite: #F7F7F7;
+
+
+//  ========== MIXINS =============
+// Skew mixins
+@mixin skew($height, $colour) {
+   height: height;
+   background: colour;
+   position: relative;
+   top: 0; right: 0; left: 0; bottom: 0;
+}
+@mixin skewAfter($pointRef, $skewIntDeg) {
+      z-index: -10;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: inherit;
+      top: 0; right: 0; bottom: 0; left: 0;
+      transform-origin: pointRef;
+      transform: skewY(skewIntDeg);
+}
