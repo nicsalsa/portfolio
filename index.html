@@ -7,21 +7,23 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700|Playfair+Display:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
+    <link href="dist/hamburgers.css" rel="stylesheet">
     <link rel="stylesheet" href="public/styles/style.css">
     <title>Nicole Salceda</title>
 </head>
 <body>
     <!-- ========HEADER BEGINS HERE======== -->
     <header>
+        <!-- header nav -->
         <nav class="nav fontAccent wrapperNav">
+            <!-- header logo -->
             <a href="#" class="nav__logo">
-                <!-- <div > -->
-                    <p class="nav__logo--item white"> ns </p>
-                <!-- </div> -->
+                <p class="nav__logo--item white"> ns </p>
             </a>
+            <!-- header nav list -->
             <ul class="nav__list">
                 <label for="hamburger">
-                    <i class="hamburger fas fa-bars"></i>
+                    <i class="hamburger fas fa-bars"><span class="hamburger--title"> menu </span></i>
                 </label>
                 <input type="checkbox" id="hamburger" checked>
                 <li class="nav__list--item"><a href="#">home</a></li>
@@ -31,6 +33,7 @@
                 <li class="nav__list--item"><a href="">contact</a></li>
             </ul>
         </nav>
+        <!-- header title -->
         <div class="hero">
             <h1 class="hero__name white uppercase">
                 Nicole 
@@ -40,22 +43,31 @@
             </h1>
             <p class="fontAccent hero__name--text">Web Developer</p>
         </div>
-        <div class="skew"></div>
+        <div class="skew">
+            <!-- arrow down to about section-->
+            <a href="#">
+                <i class="fas fa-long-arrow-alt-down"></i>
+            </a>
+        </div>
     </header>
     <!-- ======== HEADER ENDS ===========-->
     <!-- ======== MAIN SECTION BEGINS ========== -->
     <main>
         <!-- about section begins -->
-        <section class="about block wrapper">
-            <div class="block__title">
+        <section class="about block">
+            <div class="block__title wrapper">
                 <div class="block__title--subtitle">
-                    <hr class="block__title--subtitle--line">
-                    <p class="block__title--subtitle--description">who am i</p>
-                    <h2 class="block__title--subtitle--heading uppercase">hello</h2>
+                    <div class="block__title--subtitle--box">
+                        <hr class="block__title--subtitle--box--line">
+                        <p class="block__title--subtitle--box--description">who am i</p>
+                    </div>
+                    <h2 class="block__title--subtitle--heading uppercase h2">hello</h2>
                 </div>
             </div>
-            <figure class="block__fig">
-                <!-- <img src="./src/assets/bootcampHeadshot4 copy.jpg" alt="Headshot of Nicole Salceda sitting in HackerYou red armchair" class="block__fig--image"> -->
+            <figure class="block__fig wrapper">
+                <div class="block__fig--img">
+                    <div class="block__fig--img--item"></div>
+                </div>
                 <figcaption class="block__fig__figcap">
                     <h3 class="block__fig__figcap--heading">
                         I'm a Web Developer, based in Toronto, Lorem ipsum, dolor sit amet consectetur adipisicing elit. In labore illo optio vel neque sapiente.
@@ -83,7 +95,7 @@
         <section class="portfolio block wrapper">
             <div class="block__title">
                 <p class="block__title--description">awesome projects</p>
-                <h2 class="block__title--heading uppercase">my work</h2>
+                <h2 class="block__title--heading uppercase h2">my work</h2>
             </div>
             <!-- portfolio piece #1 -->
             <figure class="block__fig">
