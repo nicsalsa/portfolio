@@ -1,32 +1,85 @@
 // FOOTER STYLES
 
 footer {
-   height: 100vh;
+   min-height: 710px;
+   height: 100%;
    background: $color-dark;
-   padding: 10rem 0 0 0;
+   padding: 10rem 0;
    .info {
       padding-top: 1rem;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
       align-items: center;
       font-size: 1.5rem;
       &__signature {
          width: 45%;
          text-align: center;
+         font-weight: bold;
+         color: $color-accent;
+         @include breakPoint(break30){
+            width: 58%;
+         }
+         @include breakPoint(break53){
+            width: 100%;
+         }
+         @include breakPoint(break65){
+            width: 100%;
+         }
+         @include breakPoint(break70){
+            font-size: 1.2rem;
+         }
          &--text {
             padding: 1rem 0;
             line-height: 1.5;
          }
+         &--email {
+            .emailLink {
+               transition: 1s all ease;
+               border-bottom: 2px solid $color-accent;
+               @include breakPoint(break70){
+                  font-size: 1.3rem;
+               }
+               &:hover {
+                  border-bottom: 2px solid $color-accent;
+               }
+            }
+         }
       }
       &__media {
-         padding: 10px;
+         // padding: 10px;
          margin: 2rem;
+         @include breakPoint(break65){
+            margin: 1rem;
+         }
+         @include breakPoint(break75){
+            margin: 1rem 5px;
+         }
          &--item {
             margin: 2rem;
+            .fontAccent {
+               transition: 1s all ease;
+               &:hover {
+                  color: #fff;
+               }
+            }
+         }
+      }
+   }
+   .copyright {
+      position: relative;
+      top: 0; right: 0; left: 0; bottom: 0;
+      &--sign {
+         position: absolute;
+         left: 50%;
+         bottom: 0;
+         top: 50px;
+         transform: translateX(-50%);
+         font-weight: bold;
+         color: $color-darkgrey;
+         letter-spacing: 1.2px;
+         @include breakPoint(break65){
+            top: 0;
          }
       }
    }
 }
-
-

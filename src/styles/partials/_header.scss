@@ -5,6 +5,9 @@ header {
    position: relative;
    top: 0; right: 0; left: 0; bottom: 0;
    padding-bottom: 5rem;
+   @include breakPoint(break30){
+        padding-bottom: 0;
+   }
    .nav {
       display: flex;
       justify-content: space-between;
@@ -23,9 +26,12 @@ header {
          .hamburger {
             text-align: right;
             width: 100%;
-            padding-bottom: 2rem;
+            padding-bottom:2rem;
             &--title {
               font-family: $font-sansSerif;
+              @include breakPoint(break55) {
+                display:none;
+              }
             }
             &:hover {
               color: $color-accent2;
@@ -33,6 +39,11 @@ header {
          }
          &--item {
             margin-bottom: 4.5rem ;
+            @include breakPoint(break50){
+              margin: 0;
+              padding: 20px;
+              background: rgba($color-offwhite, 0.8);
+            }
             &:hover {
               color: $color-accent2;
               font-weight: bold;
@@ -47,15 +58,41 @@ header {
       top: 0; left: 50%;
       transform: translate(-50%, 50%) rotate(-90deg);
       z-index: 10;
+      // responsive begins for hero
+      @include breakPoint(break10) {
+        transform: translate(-50%, 80%) rotate(-90deg);
+      }
+      @include breakPoint(break15){
+        transform: translate(-50%, 90%) rotate(-90deg);
+      }
+      @include breakPoint(break45){
+        transform: translate(-50%, 100%) rotate(-90deg);
+        padding-bottom: 5%;
+      }
+      @include breakPoint(break50) {
+        transform: translate(-50%, 100%);
+        left: 40%;
+      }
+      @include breakPoint(break55) {
+        transform: translate(-50%, 100%) rotate(-90deg);
+      }
+      //responsive ends for hero
+
       &__name { //NICOLE
          font-size: 4rem;
          width: 100%;
          text-shadow: 0 0 2px black;
+          @include breakPoint(break55) {
+            font-size: 3rem;
+          }
          &--lastName { //SALCEDA
             font-size: 6rem;
             width: 100%;
             display: block;
             line-height: 0.8;
+            @include breakPoint(break55) {
+              font-size: 4rem;
+            }
          }
          &--text { 
             font-size: 2rem;

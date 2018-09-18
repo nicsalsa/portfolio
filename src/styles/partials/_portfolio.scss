@@ -21,7 +21,7 @@
       &__figcap {
          width: 40%;
          flex: 0 1 40%;
-         transform: translateX(0);
+         // transform: translateX(0);
          padding: 20px;
          z-index: 100;
          &--heading, &--text, &--list {
@@ -31,13 +31,14 @@
          &--heading {
             font-family: $font-serif;
             font-size: 1.8rem;
-            color: #333;
+            color: $color-dark;
          }
          &--list {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             flex-direction: row;
+            color: $color-accent;
             &--item {
                font-family: $font-serif;
                font-weight: bold;
@@ -51,8 +52,21 @@
 }
 .alignRight {
    text-align: right;
+   transform: translateX(10%);
 }
-
+.block__button--live, .block__button--git {
+   background: $color-dark;
+   border:none;
+   color: #fff;
+   font-weight: bold;
+   border: solid 1.5px $color-dark;
+   transition: 0.5s all ease;
+   &:hover {
+      color: $color-dark;
+      background: #fff;
+      border: solid 1.5px $color-accent;
+   }
+}
 //portfolio image backgrounds
 .item1 {
    background: url('/src/assets/mockupPhotography.jpg') center;

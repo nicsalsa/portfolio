@@ -1,10 +1,11 @@
 // ===== SKILLSET STYLES =======
 
 .skillset {
-   padding: 8rem 0 0 0;
+   padding: 4rem 0 0 0;
    background: none;
    width: 40%;
-   height: 100vh;
+   height: 100%;
+   min-height: 705px;
    &__iconList {
       padding: 2rem 0;
       display: flex; 
@@ -12,15 +13,20 @@
       align-items: center;
       text-align: center;
       margin: auto;
+      @include breakPoint(break50){
+         flex-direction: column;
+      }
       &--color {
          display: flex;
          flex-direction: column;
          justify-content: center;
          align-items: center;
          flex:1 0 25%;
+         @include breakPoint(break50){
+            flex-direction: row;
+         }
          &--item {
             font-size: 5rem;
-            // text-shadow: 0 1px 2px grey;
             margin: 1rem;
          }
       }

@@ -25,10 +25,20 @@ li {
 }
 // button
 .btn {
-   border: 1px solid $color-accent;
-   padding: 0.5rem 3rem;
-  //  margin: 5px;
-   width: 200px;
+   padding: 15px;
+   width: 210px;
+   background: $color-dark;
+   border:none;
+   color: #fff;
+   text-align: center;
+  //  font-weight: bold;
+  //  font-family: $font-serif;
+   &:hover {
+      color: $color-dark;
+      background: #fff;
+      border: solid 1.5px $color-accent;
+   }
+
 }
 
 // arrow down
@@ -42,12 +52,75 @@ li {
   color: $color-darkgrey;
   font-size: 3rem;
   transform: translateX(-2.4%);
+  &:hover {
+    color: $color-accent;
+  }
 }
 
 //hamburger
 #hamburger {
    display:none;
+
 }
 #hamburger:checked ~ li {
    display: none;
+}
+
+
+
+
+
+
+//konami code
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+@keyframes falling-bagels {
+            0% {
+                top: -500px;
+            }
+            10%, 30%, 50%, 70%, 90% {
+                margin-left: 10px;
+            }
+            20%, 40%, 60%, 80% {
+                margin-left: 100px;
+            }
+            100% {
+                top: 100%;
+            }
+        }
+.bagels {
+        position: absolute;
+        animation-name: falling-bagels;
+        animation-duration: 5s;
+        /*animation-delay: 1s;*/
+        z-index:1010101010;
+        animation-timing-function: ease-in-out;
+        top: -500px;
+        animation-iteration-count: 1;
+        /*animation-direction: */
+}
+.bagels1{
+    left: 11%;
+    animation-delay: 3s;
+}
+.bagels2 {
+    left: 25%;
+    animation-delay: 5s;
+    animation-duration: 10s;
+}
+.bagels3 {
+    left: 33%;
+    animation-delay: 1.5s;
+}
+.bagels4{
+    left: 79%;
+    animation-delay: 4s;
+}
+.bagels5 {
+    left: 62%;
+    animation-delay: .8s;
 }
