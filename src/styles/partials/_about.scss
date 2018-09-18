@@ -1,8 +1,9 @@
 // ===== ABOUT STYLES =====
-
-.block {
-   padding: 15rem 0;
+.about {
    height: 100vh;
+}
+.block {
+   padding: 10rem 0;
    background: $color-offwhite;
    position: relative;
    top: 0; right: 0; left: 0; bottom: 0;
@@ -22,14 +23,12 @@
             }
             &--description {
                position: absolute;
-               // font-size: 1.5rem;
                right: 50%;
-               width: 150px;
+               width: 300px;
                color: $color-darkgrey;
                font-family: $font-serif;
                padding: 5px 0 5px 10px;
                transform: translate(100%, -1.6rem);
-
             }
          }
          &--heading {

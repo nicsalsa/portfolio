@@ -13,7 +13,6 @@ body {
    width: 95%;
    margin: 0 auto;
 }
-
 a {
    text-decoration: none;
    color: inherit;
@@ -24,7 +23,23 @@ img {
 li {
    list-style-type: none;
 }
+// arrow down
+.fa-long-arrow-alt-down {
+  z-index: 100;
+  position: absolute;
+  top: 90%;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  color: $color-accent2;
+  font-size: 3rem;
+  transform: translateX(-2.4%);
+}
 
-section {
-   height: 80vh;
+//hamburger
+#hamburger {
+   display:none;
+}
+#hamburger:checked ~ li {
+   display: none;
 }

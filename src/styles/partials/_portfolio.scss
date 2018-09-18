@@ -1,0 +1,50 @@
+
+// ===== portfolio styles ======
+.portfolio{
+   position: static;
+   background: none;
+   padding: 5rem 0 15rem;
+   .block__fig {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem 0;
+      &--img {
+         width: 60%;
+         flex: 1 0 60%;
+         &--item {
+            width: 500px;
+            height: 300px;
+            background-size: cover;
+         }
+      }
+      &__figcap {
+         width: 40%;
+         flex: 0 1 40%;
+         transform: translateX(0);
+      }
+      &__figcap {
+         &--list {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            &--item {
+               font-family: $font-serif;
+            }
+         }
+      }
+   }
+}
+//portfolio image backgrounds
+.item1 {
+   background: url('/src/assets/mockupPhotography.jpg') center;
+}
+
+.item2 {
+   background: url('/src/assets/toBangMockup.jpg') center;
+}
+
+.item3 {
+   background: url('/src/assets/mockupMoondollar.jpg') center;
+}

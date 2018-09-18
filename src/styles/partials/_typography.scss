@@ -18,3 +18,43 @@ h1 {
 .block__title--subtitle--box--description {
    font-size: 1.5rem;
 }
+.subtitle {
+   font-size: 1rem;
+   font-family: $font-sansSerif;
+   text-transform: uppercase;
+   text-align: center;
+   color: #333;
+}
+
+//tools colors
+
+.react {
+   color: $color-react;
+}
+.javascript {
+   color: $color-js;
+}
+.sass {
+   color: $color-sass;
+}
+.gulp {
+   color: $color-gulp;
+}
+.css {
+   color: $color-css;
+}
+.html {
+   color: $color-html;
+}
+.jquery {
+   color: $color-jquery;
+}
+.github {
+   color: #6e5494;
+}
+.nodejs {
+   color: #85CB39;
+}
+.firebase {
+   color: $color-firebase;
+}

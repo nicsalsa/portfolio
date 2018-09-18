@@ -7,13 +7,15 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700|Playfair+Display:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
-    <link href="dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
     <link rel="stylesheet" href="public/styles/style.css">
     <title>Nicole Salceda</title>
 </head>
 <body>
+
     <!-- ========HEADER BEGINS HERE======== -->
-    <header>
+    <header id="home">
         <!-- header nav -->
         <nav class="nav fontAccent wrapperNav">
             <!-- header logo -->
@@ -26,11 +28,11 @@
                     <i class="hamburger fas fa-bars"><span class="hamburger--title"> menu </span></i>
                 </label>
                 <input type="checkbox" id="hamburger" checked>
-                <li class="nav__list--item"><a href="#">home</a></li>
-                <li class="nav__list--item"><a href="#">about</a></li>
-                <li class="nav__list--item"><a href="#">skills</a></li>
-                <li class="nav__list--item"><a href="#">work</a></li>
-                <li class="nav__list--item"><a href="">contact</a></li>
+                <li class="nav__list--item"><a href="#home">home</a></li>
+                <li class="nav__list--item"><a href="#about">about</a></li>
+                <li class="nav__list--item"><a href="#skills">skills</a></li>
+                <li class="nav__list--item"><a href="#work">work</a></li>
+                <li class="nav__list--item"><a href="#contact">contact</a></li>
             </ul>
         </nav>
         <!-- header title -->
@@ -45,7 +47,7 @@
         </div>
         <div class="skew">
             <!-- arrow down to about section-->
-            <a href="#">
+            <a href="#about">
                 <i class="fas fa-long-arrow-alt-down"></i>
             </a>
         </div>
@@ -54,7 +56,7 @@
     <!-- ======== MAIN SECTION BEGINS ========== -->
     <main>
         <!-- about section begins -->
-        <section class="about block">
+        <section class="about block" id="about">
             <div class="block__title wrapper">
                 <div class="block__title--subtitle">
                     <div class="block__title--subtitle--box">
@@ -77,44 +79,121 @@
                     </p>
                 </figcaption>
             </figure>
+            <a href="#skills">
+                <i class="fas fa-long-arrow-alt-down"></i>
+            </a>
 
         </section>
         <!-- about section ends  -->
         <!-- skillset section begins -->
-        <section class="skillset wrapper">
-            <i class="fab fa-react"></i>
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <div class="skillset__jquery">
-                <!-- <img src="./src/assets/noun_jquery_414780.svg" alt="Jquery logo"> -->
+        <section class="skillset block wrapper" id="skills">
+            <div class="block__title wrapper">
+                <div class="block__title--subtitle">
+                    <div class="block__title--subtitle--box">
+                        <hr class="block__title--subtitle--box--line">
+                        <p class="block__title--subtitle--box--description">my skills</p>
+                    </div>
+                    <h2 class="block__title--subtitle--heading uppercase h2">toolkit</h2>
+                </div>
             </div>
-
+            <div class="skillset__iconList">
+                <ul class="skillset__iconList--color">
+                    <li class="skillset__iconList--color--item gulp">
+                        <i class="fab fa-gulp"></i>
+                        <p class="subtitle">gulp</p>
+                    </li>
+                    <li class="skillset__iconList--color--item html">
+                        <i class="fab fa-html5"></i>
+                        <p class="subtitle">html5</p>
+                    </li>
+                </ul>
+                <ul class="skillset__iconList--color">
+                    <li class="skillset__iconList--color--item firebase">
+                        <div class="firebase--img">
+                            <img src="./src/assets/firebase.png" alt="firebase logo">
+                        </div>
+                        <p class="subtitle">firebase</p>
+                    </li>
+                    <li class="skillset__iconList--color--item javascript">
+                        <i class="fab fa-js"></i>
+                        <p class="subtitle">javascript</p>
+                    </li>
+                </ul>
+                <ul class="skillset__iconList--color">
+                    <li class="skillset__iconList--color--item css">
+                        <i class="fab fa-css3-alt"></i>
+                        <p class="subtitle">css3</p>
+                    </li>
+                    <li class="skillset__iconList--color--item jquery">
+                        <i class="devicon-jquery-plain colored"></i>
+                        <p class="subtitle">jquery</p>
+                    </li>
+                </ul>
+                <ul class="skillset__iconList--color">
+                    <li class="skillset__iconList--color--item nodejs">
+                        <i class="devicon-nodejs-plain colored"></i>
+                        <p class="subtitle">node.js</p>
+                    </li>
+                    <li class="skillset__iconList--color--item react">
+                        <i class="fab fa-react"></i>
+                        <p class="subtitle">react</p>
+                    </li>
+                </ul>
+                <ul class="skillset__iconList--color">
+                    <li class="skillset__iconList--color--item github">
+                        <i class="fab fa-github-alt"></i>
+                        <p class="subtitle">github</p>
+                    </li>
+                    <li class="skillset__iconList--color--item sass">
+                        <i class="fab fa-sass"></i>
+                        <p class="subtitle">sass</p>
+                    </li>
+                </ul>
+            </div>
+            <a href="#work">
+                <i class="fas fa-long-arrow-alt-down"></i>
+            </a>
         </section>
         <!-- skillset section ends -->
         <!-- portfolio section begins -->
-        <section class="portfolio block wrapper">
-            <div class="block__title">
-                <p class="block__title--description">awesome projects</p>
-                <h2 class="block__title--heading uppercase h2">my work</h2>
+        <section class="block portfolio wrapper" id="work">
+            <div class="block__title wrapper">
+                <div class="block__title--subtitle">
+                    <div class="block__title--subtitle--box">
+                        <hr class="block__title--subtitle--box--line">
+                        <p class="block__title--subtitle--box--description">awesome projects</p>
+                    </div>
+                    <h2 class="block__title--subtitle--heading uppercase h2">work</h2>
+                </div>
             </div>
             <!-- portfolio piece #1 -->
-            <figure class="block__fig">
-                <div class="block__img"></div>
+            <figure class="block__fig portfolioPiece1">
+                <div class="block__img">
+                    <div class="block__fig--img--item item1"></div>
+                </div>
                 <figcaption class="block__fig__figcap">
                     <h3 class="block__fig__figcap--heading">
-                        My first portfolio piece
+                        PSD conversion
                     </h3>
                     <p class="block__fig__figcap--text">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia architecto suscipit recusandae, quidem est rem sunt, aspernatur.
                     </p>
+                    <ul class="block__fig__figcap--list">
+                        <li class="block__fig__figcap--list--item">Html5</li>
+                        <li class="block__fig__figcap--list--item">Css3</li>
+                        <li class="block__fig__figcap--list--item">Sass</li>
+                        <li class="block__fig__figcap--list--item">Responsive</li>
+                    </ul>
                 </figcaption>
             </figure>
             <!-- portfolio piece #2 -->
-            <figure class="block__fig">
-                <div class="block__img"></div>
+            <figure class="block__fig portfolioPiece2">
+                <div class="block__img">
+                    <div class="block__fig--img--item item2"></div>
+                </div>
                 <figcaption class="block__fig__figcap">
                     <h3 class="block__fig__figcap--heading">
-                        My second portfolio piece
+                        Quiz app using Javascript
                     </h3>
                     <p class="block__fig__figcap--text">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia architecto suscipit recusandae, quidem est rem sunt, aspernatur.
@@ -122,11 +201,13 @@
                 </figcaption>
             </figure>
             <!-- portfolio piece #3 -->
-            <figure class="block__fig">
-                <div class="block__img"></div>
+            <figure class="block__fig portfolioPiece3">
+                <div class="block__img">
+                    <div class="block__fig--img--item item3"></div>
+                </div>
                 <figcaption class="block__fig__figcap">
                     <h3 class="block__fig__figcap--heading">
-                        My third portfolio piece
+                        React app 
                     </h3>
                     <p class="block__fig__figcap--text">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia architecto suscipit recusandae, quidem est rem sunt, aspernatur.
@@ -140,12 +221,11 @@
     <!-- ======== FOOTER BEGINS ============ -->
     <footer>
         <!-- contact section begins -->
-        <section class="contact wrapper">
+        <section class="contact wrapper" id="contact">
             <form action="GET" class="contact__form">
                 <label for="name">Name</label>
                 <input class="contact__form--name" type="text" placeholder="Name">
                 <div class="flexContainer contact__form--address">
-                    <!-- look for inputs specifically for phone and email -->
                     <label for="phone">Phone</label>
                     <input type="text" placeholder="Phone">
                     <label for="email">Email</label>
@@ -171,7 +251,11 @@
 
     </footer>
     <!-- ======== FOOTER ENDS ============ -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- SCRIPTS -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
     <script src="public/scripts/app.js"></script>
 </body>
 </html>
