@@ -22,6 +22,8 @@
          width: 40%;
          flex: 0 1 40%;
          transform: translateX(0);
+         padding: 20px;
+         z-index: 100;
          &--heading, &--text, &--list {
             padding-bottom: 1.5rem;
          }
@@ -41,13 +43,15 @@
                font-weight: bold;
                flex: 1 0 40px;
                text-transform: uppercase;
-
+               text-align: center;
             }
          }
       }
    }
 }
-
+.alignRight {
+   text-align: right;
+}
 
 //portfolio image backgrounds
 .item1 {

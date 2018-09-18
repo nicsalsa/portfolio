@@ -1,7 +1,32 @@
 // FOOTER STYLES
 
 footer {
+   height: 100vh;
    background: $color-dark;
-   padding: 10rem 0;
+   padding: 10rem 0 0 0;
+   .info {
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      font-size: 1.5rem;
+      &__signature {
+         width: 45%;
+         text-align: center;
+         &--text {
+            padding: 1rem 0;
+            line-height: 1.5;
+         }
+      }
+      &__media {
+         padding: 10px;
+         margin: 2rem;
+         &--item {
+            margin: 2rem;
+         }
+      }
+   }
 }
+
 
