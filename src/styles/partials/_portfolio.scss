@@ -1,9 +1,9 @@
 
 // ===== portfolio styles ======
 .portfolio{
-   position: static;
+   position: relative;
    background: none;
-   padding: 5rem 0 15rem;
+   padding: 5rem 0;
    .block__fig {
       display: flex;
       justify-content: center;

@@ -31,8 +31,7 @@ li {
    border:none;
    color: #fff;
    text-align: center;
-  //  font-weight: bold;
-  //  font-family: $font-serif;
+   transition: 0.8s ease all;
    &:hover {
       color: $color-dark;
       background: #fff;
@@ -44,6 +43,7 @@ li {
 // arrow down
 .fa-long-arrow-alt-down {
   z-index: 100;
+  width: 50px;
   position: absolute;
   top: 90%;
   right: 0;
@@ -51,7 +51,8 @@ li {
   left: 50%;
   color: $color-darkgrey;
   font-size: 3rem;
-  transform: translateX(-2.4%);
+  transform: translateX(-49.2%);
+  text-align: center;
   &:hover {
     color: $color-accent;
   }
@@ -65,10 +66,6 @@ li {
 #hamburger:checked ~ li {
    display: none;
 }
-
-
-
-
 
 
 //konami code
