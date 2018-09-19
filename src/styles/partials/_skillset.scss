@@ -6,6 +6,12 @@
    width: 40%;
    height: 100%;
    min-height: 705px;
+   @include breakPoint(break50){
+      width: 80%;
+   }
+   @include breakPoint(break76){
+      width: 90%;
+   }
    &__iconList {
       padding: 2rem 0;
       display: flex; 
@@ -14,7 +20,7 @@
       text-align: center;
       margin: auto;
       @include breakPoint(break50){
-         flex-direction: column;
+         flex-wrap: wrap;
       }
       &--color {
          display: flex;
@@ -24,10 +30,26 @@
          flex:1 0 25%;
          @include breakPoint(break50){
             flex-direction: row;
+            justify-content: space-around;
          }
+         @include breakPoint(break56){
+            flex-direction: column;
+         } 
          &--item {
             font-size: 5rem;
             margin: 1rem;
+            flex-grow: 1;
+            @include breakPoint(break50){
+               font-size: 3rem;
+            }
+            @include breakPoint(break59){
+               font-size: 2.5rem;
+               margin: 5px;
+            }
+            @include breakPoint(break73){
+               font-size: 2rem;
+               margin: 2px;
+            }
          }
       }
    }
@@ -37,6 +59,25 @@
    flex-direction: column;
    align-items: center;
    .firebase--img {
-      width: 50%;  
+      width: 50%; 
+      @include breakPoint(break50){
+         width: 40%;
+      }
+      @include breakPoint(break50){
+         width: 40%;
+      }
+      @include breakPoint(break56){
+         width: 30%;
+      } 
+      @include breakPoint(break65){
+         width: 25%;
+      }
    }
+}
+
+//responsive fixes for the skills set icons
+.purple, .green {
+   @include breakPoint(break56){
+      flex-direction: row;
+   } 
 }

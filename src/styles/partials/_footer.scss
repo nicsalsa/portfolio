@@ -19,7 +19,10 @@ footer {
          @include breakPoint(break30){
             width: 58%;
          }
-         @include breakPoint(break53){
+         @include breakPoint(break45){
+            width: 90%
+         }
+         @include breakPoint(break69){
             width: 100%;
          }
          @include breakPoint(break65){
@@ -33,20 +36,28 @@ footer {
             line-height: 1.5;
          }
          &--email {
-            .emailLink {
-               transition: 1s all ease;
-               border-bottom: 2px solid $color-accent;
+            .emailLink, .fa-paper-plane {
+               transition: all ease 0.8s;
+               color: #fff;
+               &:hover .fa-paper-plane, &:hover {
+                  color: $color-accent2;
+               }
+               @include breakPoint(break5){
+                  font-size: 1.3rem;
+               }
+               @include breakPoint(break69){
+                  font-size: 1rem;
+               }
                @include breakPoint(break70){
                   font-size: 1.3rem;
                }
-               &:hover {
-                  border-bottom: 2px solid $color-accent;
+               @include breakPoint(break78){
+                  font-size: 0.9rem;
                }
             }
          }
       }
       &__media {
-         // padding: 10px;
          margin: 2rem;
          @include breakPoint(break65){
             margin: 1rem;
@@ -55,11 +66,12 @@ footer {
             margin: 1rem 5px;
          }
          &--item {
-            margin: 2rem;
+            margin: 1rem;
             .fontAccent {
                transition: 1s all ease;
                &:hover {
-                  color: #fff;
+                  color: $color-accent2;
+                  transform: scale(1.2);
                }
             }
          }
@@ -67,18 +79,27 @@ footer {
    }
    .copyright {
       position: relative;
+      display: flex;
+      justify-content: center;
       top: 0; right: 0; left: 0; bottom: 0;
       &--sign {
          position: absolute;
          left: 50%;
          bottom: 0;
-         top: 50px;
+         // top: 50px;
          transform: translateX(-50%);
          font-weight: bold;
          color: $color-darkgrey;
          letter-spacing: 1.2px;
          @include breakPoint(break65){
             top: 0;
+         }
+         @include breakPoint(break69){
+            font-size: 0.8rem;
+         }
+         @include breakPoint(break78){
+            padding-bottom: 0.5rem;
+            font-size: 0.7rem;
          }
       }
    }

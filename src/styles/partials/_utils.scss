@@ -44,17 +44,38 @@ $color-firebase: #F4832D;
 // ======= responsive mixins =========
 
 @mixin breakPoint($point) {
+    @if $point == break4 {
+        @media (max-width:1138px) { @content;}
+    }
+    @if $point == break5 {
+        @media (max-width:1070px) { @content;}
+    }
     @if $point == break10 {
         @media (max-width:1045px) { @content;}
+    }
+    @if $point == break13 {
+        @media (max-width:975px) { @content;}
     }
     @if $point == break15 {
         @media (max-width: 950px) {@content;}
     }
+    @if $point == break18 {
+        @media (max-width: 913px) {@content;}
+    }
     @if $point == break20 {
         @media (max-width:900px) { @content;}
-    }  
+    } 
+    @if $point == break29 {
+        @media (max-width:853px) { @content;}
+    } 
     @if $point == break30 {
         @media (max-width:850px) { @content;}
+    }
+    @if $point == break33 {
+        @media (max-width:830px) { @content;}
+    }
+    @if $point == break35 {
+        @media (max-width:800px) { @content;}
     } 
     @if $point == break40 {
         @media (max-width:785px) { @content;}
@@ -65,23 +86,52 @@ $color-firebase: #F4832D;
     @if $point == break50 {
         @media (max-width:650px) { @content;}
     } 
+    @if $point == break51 {
+        @media (max-width:615px) { @content;}
+    }
+    @if $point == break52 {
+        @media (max-width:590px) { @content;}
+    }
     @if $point == break53 {
         @media (max-width:570px) { @content;}
     } 
     @if $point == break55 {
         @media (max-width:550px) { @content;}
     } 
+    @if $point == break56 {
+        @media (max-width:539px) { @content;}
+    }
+    @if $point == break58 {
+        @media (max-width:513px) { @content;}
+    }
+    @if $point == break59 {
+        @media (max-width:501px) { @content;}
+    }
     @if $point == break60 {
         @media (max-width:500px) { @content;}
     }
     @if $point == break65 {
         @media (max-width:480px) { @content;}
     } 
+    @if $point == break69 {
+        @media (max-width:426px) { @content;}
+    } 
     @if $point == break70 {
         @media (max-width:420px) { @content;}
     } 
+    @if $point == break73 {
+        @media (max-width:392px) { @content;}
+    }
+    @if $point == break74 {
+        @media (max-width:374px) { @content;}
+    }   
     @if $point == break75 {
         @media (max-width:365px) {@content;}
     }
-
+    @if $point == break76 {
+        @media (max-width:359px) { @content;}
+    }
+    @if $point == break78 {
+        @media (max-width:335px) { @content;}
+    }
 }

@@ -1,16 +1,18 @@
 // ===== ABOUT STYLES =====
 .about {
-   height: 100vh;
+   height: 100%;
    min-height: 705px;
+   padding-bottom: 8rem;
 }
+//beginning of block template
 .block {
    padding: 8rem 0 0 0;
    background: $color-offwhite;
    position: relative;
    top: 0; right: 0; left: 0; bottom: 0;
    @include breakPoint(break40){
-      margin-bottom: 5rem;
-      padding: 5rem 0 15rem 0;
+      margin-bottom: 3rem;
+      padding-top: 5rem;
    }
    &__title {
       z-index: 100;
@@ -35,8 +37,12 @@
                padding: 5px 0 5px 10px;
                transform: translate(100%, -1.6rem);
                @include breakPoint(break75){
-               font-size: 1.3rem;
-            }
+                  font-size: 1.3rem;
+               }
+               @include breakPoint(break51){
+                  width: 60%;
+                  font-size: 1rem;
+               }  
             }
          }
          &--heading {
@@ -75,6 +81,12 @@
       @include breakPoint(break40){
          flex-direction:column;
       }
+      @include breakPoint(break70){
+         padding-bottom: 3rem;
+      }
+      @include breakPoint(break78){
+            padding-bottom: 5rem;
+         }
       &--img {
          width: 50%;
          display: flex;
@@ -92,44 +104,94 @@
             height: 390px;
             background: url('/src/assets/bootcampHeadshot4\ copy-2.jpg');
             background-size: cover;
+            @include breakPoint(break40){
+               width: 250px;
+               height: 250px;
+            } 
          }
       }
       &__figcap {
-         background: rgba($color-darkgrey,0.1);
+         background: rgba(#fff,0.8);
          width: 50%;
          max-height: 350px;
-         padding: 3rem;
+         padding: 2rem;
          border-radius: 5px;
-         transform: translateX(-15%);
+         transform: translateX(-10%);
+         @include breakPoint(break4){
+            padding: 1rem 1rem 2rem;
+         }
          @include breakPoint(break30){
             width: 90%;
             align-self: flex-end;
             transform: translate(-10%, 5%);
          }
          @include breakPoint(break40){ 
-            transform: none;
+            transform: translateY(-10%);
             align-self: center;
+         }
+         @include breakPoint(break53){
+            font-size: 0.9rem;
+         } 
+         @include breakPoint(break70){
+            transform: none;
+            padding-bottom: 1rem;
+            .block__fig__figcap{
+               &--text {
+                  padding: 0.5rem;
+               }
+            }
+         }
+         &--heading {
+            padding: 0;
+         }
+         &--text {
+            line-height: 1.5;
+            padding: 0.5rem 0;
          }
       }
    }
+   //End of block template
+
+   //RESUME BUTTON
    &__resume {
       display: flex;
       justify-content: center;
       align-items: center;
       &--btn {
+         padding: 15px;
          margin-top: 2rem;
-         transform: translateX(100%);
+         transform: translate(40%, -230%);
+         @include breakPoint(break4){
+            transform: translate(40%, -220%);
+         }
+         @include breakPoint(break18){
+            transform: translate(40%, -200%);
+         }
          @include breakPoint(break30){
-            transform: translateX(50%);
+            transform: translate(75%, -70%);
+         }
+         @include breakPoint(break35){
+            transform: translate(90%, -30%);
          }
          @include breakPoint(break40){
-            transform: none;
+            transform: translate(75%, -130%);
             margin-top: 1rem;
+         }
+         @include breakPoint(break53){
+            transform: translate(40%, -130%);
+            margin-top: 1rem;
+         } 
+         @include breakPoint(break65){
+            transform: translate(30%, -125%);
+            margin-top: 1rem;
+         } 
+         @include breakPoint(break70){
+            transform: none;
          }   
       }
    }
    .arrowAbout {
-      top: 80%;
+      top: 90%;
       @include breakPoint(break40){
          top: 100%;
       }
@@ -139,14 +201,3 @@
    }
 }
 
-// .fa-long-arrow-alt-down {
-//   z-index: 100;
-//   position: absolute;
-//   top: 90%;
-//   right: 0;
-//   bottom: 0;
-//   left: 50%;
-//   color: $color-darkgrey;
-//   font-size: 3rem;
-//   transform: translateX(-2.4%);
-// }

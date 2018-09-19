@@ -7,6 +7,15 @@ body {
    max-width: 1280px;
    width: 80%;
    margin: 0 auto;
+   @include breakPoint(break20){
+     width: 85%;
+   }
+   @include breakPoint(break30) {
+      width: 80%;
+    }
+    @include breakPoint(break78) {
+      width: 95%;
+    }
 }
 .wrapperNav {
    max-width: 1280px;
@@ -25,7 +34,7 @@ li {
 }
 // button
 .btn {
-   padding: 15px;
+   padding: 5px 8px;
    width: 210px;
    background: $color-dark;
    border:none;

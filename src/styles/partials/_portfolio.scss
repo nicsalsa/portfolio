@@ -4,11 +4,20 @@
    position: relative;
    background: none;
    padding: 5rem 0;
+   .awesome {
+      @include breakPoint(break51){
+         font-size: 1rem;
+         transform: translate(100%, -2.6rem);
+      }
+   }
    .block__fig {
       display: flex;
       justify-content: center;
       align-items: flex-start;
       padding: 2rem 0;
+      @include breakPoint(break40){
+         align-items: center;
+      }
       &--img {
          width: 60%;
          flex: 1 1 60%;
@@ -16,35 +25,113 @@
             width: 500px;
             height: 300px;
             background-size: cover;
+            @include breakPoint(break13){
+               width: 400px;
+               height: 250px;
+            }
+            @include breakPoint(break13){
+               width: 330px;
+               height: 200px;
+            }
+             @include breakPoint(break40){
+               width: 450px;
+               height: 280px;
+            }
+            @include breakPoint(break52) {
+               width: 380px;
+               height: 235px;
+            }
+            @include breakPoint(break65){
+               width: 280px;
+               height: 170px;
+            }
+            @include breakPoint(break69){
+               width: 234px;
+               height: 140px;
+            }
          }
       }
       &__figcap {
          width: 40%;
          flex: 0 1 40%;
-         // transform: translateX(0);
+         background: transparent;
          padding: 20px;
          z-index: 100;
+         @include breakPoint(break13){
+            padding: 8px;
+            width: 50%;
+            flex: 0 1 50%;
+         }
+         @include breakPoint(break40){
+            width: 100%;
+            text-align: left;
+         }
+         @include breakPoint(break53){
+            width: 80%;
+         }
+         @include breakPoint(break53){
+            width: 100%;
+         }
          &--heading, &--text, &--list {
             padding-bottom: 1.5rem;
+         }
+         &--text {
+            @include breakPoint(break29){
+               padding: 0;
+               line-height: 1.5rem;
+               padding-bottom: 0.5rem;
+            }
+            @include breakPoint(break29){
+               line-height: 1.3rem;
+               padding-bottom: 0;
+            }
+            @include breakPoint(break40){
+               font-size: 2rem;
+            }
+            @include breakPoint(break51){
+               font-size: 1rem;
+            }
          }
 
          &--heading {
             font-family: $font-serif;
             font-size: 1.8rem;
             color: $color-dark;
+            @include breakPoint(break29){
+               font-size: 1.5rem;
+               padding-bottom: 1rem
+            }
+            @include breakPoint(break40){
+               font-size: 2rem;
+            }
+            @include breakPoint(break51){
+               font-size: 1.5rem;
+            }
+            @include breakPoint(break69){
+               font-size: 1.3rem;
+            }
          }
          &--list {
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             flex-direction: row;
             color: $color-accent;
+            @include breakPoint(break51){
+               flex-wrap: wrap;
+            }
             &--item {
                font-family: $font-serif;
                font-weight: bold;
-               flex: 1 0 40px;
-               text-transform: uppercase;
+               flex-grow: 1;
+               text-transform: capitalize;
                text-align: center;
+               @include breakPoint(break40){
+                 text-align: left;
+               }
+               @include breakPoint(break51){
+                  font-size: 1rem;
+               }
             }
          }
       }
@@ -52,7 +139,25 @@
 }
 .alignRight {
    text-align: right;
-   transform: translateX(10%);
+   transform: translate(10%, -5%);
+   @include breakPoint(break13){
+      transform: translate(0, -5%);
+   }
+   @include breakPoint(break40){
+      transform: none;
+
+   }
+}
+.alignLeft {
+   text-align: left;
+   transform: translate(-10%, -5%);
+   @include breakPoint(break13){
+      transform: translate(0, -5%);
+   }
+    @include breakPoint(break40){
+      transform: none;
+
+   }
 }
 .block__button--live, .block__button--git {
    background: $color-dark;
@@ -67,6 +172,10 @@
       border: solid 1.5px $color-accent;
    }
 }
+//arrow down link in portfolio
+.portfolioArrow {
+   top: 95%;
+}
 //portfolio image backgrounds
 .item1 {
    background: url('/src/assets/mockupPhotography.jpg') center;
@@ -78,4 +187,17 @@
 
 .item3 {
    background: url('/src/assets/mockupMoondollar.jpg') center;
+}
+.item4 {
+   background: url('/src/assets/superHeroMockup.jpg') center;
+}
+
+// specific responsive styles
+
+.portfolio {
+   .portfolioPiece1, .portfolioPiece3 {
+      @include breakPoint(break40){
+         flex-direction: column-reverse;
+      }
+   }
 }

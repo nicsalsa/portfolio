@@ -12,12 +12,15 @@ header {
    .nav {
       display: flex;
       justify-content: space-between;
-      padding:1.5rem 0;
+      padding:1rem 0;
       font-size: 2rem;
       position: fixed;
       left: 0; right: 0;
       margin: auto;
-      z-index: 100;
+      z-index: 150;
+      @include breakPoint(break78) {
+        padding: 0.5rem 0;
+      }
       &__logo--item {
          font-weight: bold;
          background: $color-accent;
@@ -30,7 +33,7 @@ header {
             padding-bottom:2rem;
             &--title {
               font-family: $font-sansSerif;
-              @include breakPoint(break55) {
+              @include breakPoint(break20) {
                 display:none;
               }
             }
@@ -40,10 +43,11 @@ header {
          }
          &--item {
             margin-bottom: 4.5rem ;
-            @include breakPoint(break50){
+            @include breakPoint(break40){
               margin: 0;
               padding: 20px;
-              background: rgba($color-offwhite, 0.8);
+              font-weight: bold;
+              background: $color-offwhite;
             }
             &:hover {
               color: $color-accent2;
@@ -67,15 +71,21 @@ header {
         transform: translate(-50%, 90%) rotate(-90deg);
       }
       @include breakPoint(break45){
-        transform: translate(-50%, 100%) rotate(-90deg);
+        transform: translate(-50%, 75%) rotate(-90deg);
         padding-bottom: 5%;
       }
       @include breakPoint(break50) {
-        transform: translate(-50%, 100%);
-        left: 40%;
+        // transform: translate(-50%, 100%);
+        left: 50%;
+        top: 10%;
       }
       @include breakPoint(break55) {
         transform: translate(-50%, 100%) rotate(-90deg);
+      }
+      @include breakPoint(break69){
+        left: 50%;
+        top:10%;
+        width: 80%;
       }
       //responsive ends for hero
 

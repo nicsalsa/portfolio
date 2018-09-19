@@ -12,6 +12,10 @@ h1 {
 .fontAccent {
     color: $color-accent;
 }
+.fontDarkGrey {
+    color: $color-darkgrey;
+    font-weight: normal;
+}
 .uppercase {
    text-transform: uppercase;
 }
