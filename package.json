@@ -21,5 +21,8 @@
     "hamburgers": "^0.9.3",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
+  },
+  "devDependencies": {
+    "aos": "^2.3.3"
   }
 }

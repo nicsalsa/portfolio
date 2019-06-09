@@ -18,19 +18,22 @@ header {
       left: 0; right: 0;
       margin: auto;
       z-index: 150;
+      color: white;
       @include breakPoint(break78) {
         padding: 0.5rem 0;
       }
       &__logo--item {
          font-weight: bold;
          background: $color-accent;
-         padding: 5px;
+         padding: 10px;
       }
       &__list {
+        background: $color-accent;
+        padding: 5px;
          .hamburger {
             text-align: right;
             width: 100%;
-            padding-bottom:2rem;
+            padding: 8px;
             &--title {
               font-family: $font-sansSerif;
               @include breakPoint(break20) {
@@ -38,21 +41,27 @@ header {
               }
             }
             &:hover {
-              color: $color-accent2;
+              color: $color-dark;
             }
          }
          &--item {
-            margin-bottom: 4.5rem ;
+           margin: 3.5rem 0;
+           @include breakPoint(break53){
+              margin: 1rem;           
+            }
+         }
+         &--itemLink {
+            padding: 1rem 10rem;
             @include breakPoint(break40){
-              margin: 0;
-              padding: 20px;
-              font-weight: bold;
-              background: $color-offwhite;
+              margin: 0;              
+            }
+            @include breakPoint(break53){
+              padding: 2rem;           
             }
             &:hover {
-              color: $color-accent2;
-              font-weight: bold;
+              color: $color-dark;
             }
+            
          }
       } 
    }
@@ -71,7 +80,7 @@ header {
         transform: translate(-50%, 90%) rotate(-90deg);
       }
       @include breakPoint(break45){
-        transform: translate(-50%, 75%) rotate(-90deg);
+        transform: translate(-50%, 100%) rotate(-90deg);
         padding-bottom: 5%;
       }
       @include breakPoint(break50) {
@@ -107,6 +116,9 @@ header {
          }
          &--text { 
             font-size: 2rem;
+            @include breakPoint(break80){
+              font-size: 1.8rem;
+            }
          }
       }
    }

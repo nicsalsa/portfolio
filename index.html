@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
+    <!-- <link rel="stylesheet" href="bower_components/aos/dist/aos.css" /> -->
+    <link rel="shortcut icon" type="image/png" href="src/assets/nicoleSalcedaLogo.png">
     <link rel="stylesheet" href="public/styles/style.css">
     <title>Nicole Salceda</title>
 </head>
@@ -16,19 +17,19 @@
     <!-- konami code -->
     <div id="bagel-container" class="hide">
         <div class="bagels bagels1">
-            <img src="./src/assets/bens-bagels.png" alt="">
+            <img src="./src/assets/bens-bagels.png" alt="a bagel icon with ben kelly's face in the middle">
         </div>
         <div class="bagels bagels2">
-            <img src="./src/assets/bens-bagels.png" alt="">
+            <img src="./src/assets/bens-bagels.png" alt="a bagel icon with ben kelly's face in the middle">
         </div>
         <div class="bagels bagels3">
-            <img src="./src/assets/bens-bagels.png" alt="">
+            <img src="./src/assets/bens-bagels.png" alt="a bagel icon with ben kelly's face in the middle">
         </div>
         <div class="bagels bagels4">
-            <img src="./src/assets/bens-bagels.png" alt="">
+            <img src="./src/assets/bens-bagels.png" alt="a bagel icon with ben kelly's face in the middle">
         </div>
         <div class="bagels bagels5">
-            <img src="./src/assets/bens-bagels.png" alt="">
+            <img src="./src/assets/bens-bagels.png" alt="a bagel icon with ben kelly's face in the middle">
         </div>
     </div>
     <!-- konami code ends -->
@@ -37,20 +38,20 @@
         <!-- header nav -->
         <nav class="nav fontAccent wrapperNav">
             <!-- header logo -->
-            <a href="#home" class="nav__logo">
+            <a href="#home" class="nav__logo" title="Home">
                 <p class="nav__logo--item white"> ns </p>
             </a>
             <!-- header nav list -->
             <ul class="nav__list">
-                <label for="hamburger">
-                    <i class="hamburger fas fa-bars"><span class="hamburger--title"> menu </span></i>
+                <label for="hamburger" class="hamburgerContainer">
+                    <i class="hamburger fas fa-bars"></i>
                 </label>
                 <input type="checkbox" id="hamburger" checked>
-                <li class="nav__list--item"><a href="#home">home</a></li>
-                <li class="nav__list--item"><a href="#about">about</a></li>
-                <li class="nav__list--item"><a href="#skills">skills</a></li>
-                <li class="nav__list--item"><a href="#work">work</a></li>
-                <li class="nav__list--item"><a href="#contact">contact</a></li>
+                <li class="nav__list--item"><a class="nav__list--itemLink" href="#home" title="Go to HomePage">home</a></li>
+                <li class="nav__list--item"><a class="nav__list--itemLink" href="#about" title="Go to about">about</a></li>
+                <li class="nav__list--item"><a class="nav__list--itemLink" href="#skills" title="See skills">skills</a></li>
+                <li class="nav__list--item"><a class="nav__list--itemLink" href="#work" title="See work">work</a></li>
+                <li class="nav__list--item"><a class="nav__list--itemLink" href="#contact" title="Contact Nicole">contact</a></li>
             </ul>
         </nav>
         <!-- header title -->
@@ -65,9 +66,9 @@
         </div>
         <!-- <div class="skew"> -->
             <!-- arrow down to about section-->
-            <a href="#about">
+            <!-- <a href="#about" title="Skip to next section">
                 <i class="fas fa-long-arrow-alt-down"></i>
-            </a>
+            </a> -->
         <!-- </div> -->
     </header>
     <!-- ======== HEADER ENDS ===========-->
@@ -81,26 +82,24 @@
                         <hr class="block__title--subtitle--box--line">
                         <p class="block__title--subtitle--box--description">who am i</p>
                     </div>
-                    <h2 class="block__title--subtitle--heading uppercase h2">hello</h2>
+                    <h2 class="block__title--subtitle--heading uppercase h2" data-aos="zoom-in">hello</h2>
                 </div>
             </div>
             <figure class="block__fig ">
-                <div class="block__fig--img">
+                <div class="block__fig--img" data-aos="zoom-out">
                     <div class="block__fig--img--item"></div>
                 </div>
                 <figcaption class="block__fig__figcap">
                     <h3 class="block__fig__figcap--heading">
-                        I'm a <span class="fontAccent">Toronto Web Developer</span> who is passionate about creating clean, readable code & learning new skills. 
+                        I'm a <span class="fontAccent">Toronto Web Developer</span> with an enthusiastic, creative, and sociable free spirit who can always find a reason to smile. 
                     </h3>
-                    <p class="block__fig__figcap--text">I believe patience, failure, and momentum are key ingredients to success, not only in coding, but in life as a whole. I love
-                    pushing the limits and growing one 'aha!' moment at a time.</p>
-                    <p class="block__fig__figcap--text">I am a creative creature that is socially engaging, intuitive, and always looking for the next big project. I will find any reason to smile and if the situation is right, I'll get a good infectious laugh going.</p>
+                    <p class="block__fig__figcap--text">I'm always looking for the next big project and I thrive in challenging environments. I am very passionate about learning and pushing the limits to grow one 'aha!' moment at a time. I'm looking for opportunities to contribute to a team and create amazing digital products. </p>
                 </figcaption>
             </figure>
             <div class="block__resume">
-                <a href="#" class="block__resume--btn btn wrapper">view resume</a>
+                <a href="./src/assets/nicoleSalcedaResume.pdf" target="_blank" class="block__resume--btn btn wrapper" title="View PDF of Resume in another window">view resume</a>
             </div>
-            <a href="#skills">
+            <a href="#skills" title="Skip to next section">
                 <i class="fas fa-long-arrow-alt-down arrowAbout"></i>
             </a>
         </section>
@@ -113,7 +112,7 @@
                         <hr class="block__title--subtitle--box--line">
                         <p class="block__title--subtitle--box--description">my skills</p>
                     </div>
-                    <h2 class="block__title--subtitle--heading uppercase h2">toolkit</h2>
+                    <h2 class="block__title--subtitle--heading uppercase h2" data-aos="zoom-in">toolkit</h2>
                 </div>
             </div>
             <div class="skillset__iconList">
@@ -169,9 +168,9 @@
                         <p class="subtitle">sass</p>
                     </li>
                 </ul>
-                <a href="#work">
+                <!-- <a href="#work" title="Skip to next section">
                     <i class="fas fa-long-arrow-alt-down"></i>
-                </a>
+                </a> -->
             </div>
         </section>
         <!-- skillset section ends -->
@@ -184,21 +183,69 @@
                             <hr class="block__title--subtitle--box--line">
                             <p class="block__title--subtitle--box--description awesome"><span >awesome</span> projects</p>
                         </div>
-                        <h2 class="block__title--subtitle--heading uppercase h2">work</h2>
+                        <h2 class="block__title--subtitle--heading uppercase h2" data-aos="zoom-in">work</h2>
                     </div>
                 </div>
                 <!-- portfolio piece #1 -->
-                <figure class="block__fig portfolioPiece1 ">
+                <figure class="block__fig portfolioPiece1" data-aos="slide-right">
                     <figcaption class="block__fig__figcap alignRight">
                         <h3 class="block__fig__figcap--heading">
-                            Photography Portfolio
+                            Moonshadow Cocktails
                         </h3>
                         <p class="block__fig__figcap--text">
-                            PSD conversion of a photographer's portfolio.
+                            A React app that uses the LCBO and Yummly API and is designed for a client who wants to see their coffee product incorporated
+                            into holiday cocktail parties. Collaborated with Christine Tan and Cindy Yeung.
                         </p>
                         <ul class="block__fig__figcap--list">
-                            <li class="block__fig__figcap--list--item">Html5</li>
-                            <li class="block__fig__figcap--list--item">Css3</li>
+                            <li class="block__fig__figcap--list--item">HTML5</li>
+                            <li class="block__fig__figcap--list--item">CSS3</li>
+                            <li class="block__fig__figcap--list--item">JavaScript</li>
+                            <li class="block__fig__figcap--list--item">Sass</li>
+                            <li class="block__fig__figcap--list--item">React</li>
+                            <li class="block__fig__figcap--list--item">Rest API</li>
+                        </ul>
+                        <div class="block__button">
+                            <a class="block__button--live btn" title="View Live Site" target="_blank" href="https://moondollars-2dd28.firebaseapp.com/">view live</a>
+                            <a class="block__button--git btn" title="View on Github" target="_blank" href="https://github.com/CNC-Code-Factory/chris-cindy-nic_project6">github</a>
+                        </div>
+                    </figcaption>
+                    <div class="block__img">
+                        <div class="block__fig--img--item item3"></div>
+                    </div>
+                </figure>
+                <!-- portfolio piece #2 -->
+                <figure class="block__fig portfolioPiece4" data-aos="slide-left">
+                    <div class="block__img">
+                        <div class="block__fig--img--item item4"></div>
+                    </div>
+                    <figcaption class="block__fig__figcap alignLeft">
+                        <h3 class="block__fig__figcap--heading">
+                            Superheroes VS Villains
+                        </h3>
+                        <p class="block__fig__figcap--text">
+                            A JavaScript App that pulls data from an API in order to compare stats from our favourite superheroes and villains. Collaborated with Jeff Lee.
+                        </p>
+                        <ul class="block__fig__figcap--list">
+                            <li class="block__fig__figcap--list--item">HTML5</li>
+                            <li class="block__fig__figcap--list--item">CSS3</li>
+                            <li class="block__fig__figcap--list--item">Sass</li>
+                            <li class="block__fig__figcap--list--item">JavaScript</li>
+                            <li class="block__fig__figcap--list--item">Rest API</li>
+                        </ul>
+                        <div class="block__button">
+                            <a class="block__button--live btn" title="View Live Site" href="https://nicsalsa.github.io/Jeff_Nicole_Project4/" target="_blank">view live</a>
+                            <a class="block__button--live btn" title="View on Github" href="https://github.com/nicsalsa/Jeff_Nicole_Project4">github</a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <!-- portfolio piece #3 -->
+                <figure class="block__fig portfolioPiece3" data-aos="slide-right">
+                    <figcaption class="block__fig__figcap alignRight">
+                        <h3 class="block__fig__figcap--heading">Photography Portfolio</h3>
+                        <p class="block__fig__figcap--text">A clean and polished PSD conversion of a photographer's portfolio.</p>
+                        <ul class="block__fig__figcap--list">
+                            <li class="block__fig__figcap--list--item">HTML5</li>
+                            <li class="block__fig__figcap--list--item">CSS3</li>
                             <li class="block__fig__figcap--list--item">Sass</li>
                             <li class="block__fig__figcap--list--item">Responsive</li>
                         </ul>
@@ -211,8 +258,8 @@
                         <div class="block__fig--img--item item1"></div>
                     </div>
                 </figure>
-                <!-- portfolio piece #2 -->
-                <figure class="block__fig portfolioPiece2">
+                <!-- portfolio piece #4 -->
+                <figure class="block__fig portfolioPiece2" data-aos="slide-left">
                     <div class="block__img">
                         <div class="block__fig--img--item item2"></div>
                     </div>
@@ -221,72 +268,24 @@
                             To Bang or not to Bang!
                         </h3>
                         <p class="block__fig__figcap--text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia architecto suscipit recusandae, quidem est rem sunt, aspernatur.
+                            A JavaScript quiz app that helps you decide whether or not you need to add an exclamation point, also known as, a bang!
                         </p>
                         <ul class="block__fig__figcap--list">
-                            <li class="block__fig__figcap--list--item">Html5</li>
-                            <li class="block__fig__figcap--list--item">Css3</li>
+                            <li class="block__fig__figcap--list--item">HTML5</li>
+                            <li class="block__fig__figcap--list--item">CSS3</li>
                             <li class="block__fig__figcap--list--item">Sass</li>
                             <li class="block__fig__figcap--list--item">JavaScript</li>
+                            <li class="block__fig__figcap--list--item">jQuery</li>
                         </ul>
                         <div class="block__button">
-                            <a class="block__button--live btn" href="https://nicsalsa.github.io/nicoleSalceda_project3/" target="_blank">view live</a>
-                            <a class="block__button--live btn" href="https://github.com/nicsalsa/nicoleSalceda_project3">github</a>
+                            <a class="block__button--live btn" title="View Live Site" href="https://nicsalsa.github.io/nicoleSalceda_project3/" target="_blank">view live</a>
+                            <a class="block__button--live btn" title="View on Github" href="https://github.com/nicsalsa/nicoleSalceda_project3">github</a>
                         </div>
                     </figcaption>
                 </figure>
-                <!-- portfolio piece #3 -->
-                <figure class="block__fig portfolioPiece3">
-                    <figcaption class="block__fig__figcap alignRight">
-                        <h3 class="block__fig__figcap--heading">
-                            Moonshadow Cocktails
-                        </h3>
-                        <p class="block__fig__figcap--text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia architecto suscipit recusandae, quidem est rem sunt, aspernatur.
-                        </p>
-                        <ul class="block__fig__figcap--list">
-                            <li class="block__fig__figcap--list--item">React</li>
-                            <li class="block__fig__figcap--list--item">JavaScript</li>
-                            <li class="block__fig__figcap--list--item">Sass</li>
-                            <li class="block__fig__figcap--list--item">JavaScript</li>
-                        </ul>
-                        <div class="block__button">
-                            <a class="block__button--live btn" target="_blank" href="https://moondollars-2dd28.firebaseapp.com/">view live</a>
-                            <a class="block__button--git btn" target="_blank" href="https://github.com/CNC-Code-Factory/chris-cindy-nic_project6">github</a>
-                        </div>
-                    </figcaption>
-                    <div class="block__img">
-                        <div class="block__fig--img--item item3"></div>
-                    </div>
-                </figure>
-                <!-- portfolio piece #4 -->
-                <figure class="block__fig portfolioPiece4">
-                    <div class="block__img">
-                        <div class="block__fig--img--item item4"></div>
-                    </div>
-                    <figcaption class="block__fig__figcap alignLeft">
-                        <h3 class="block__fig__figcap--heading">
-                            Superheroes VS Villains
-                        </h3>
-                        <p class="block__fig__figcap--text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia architecto suscipit recusandae, quidem est rem sunt, aspernatur.
-                        </p>
-                        <ul class="block__fig__figcap--list">
-                            <li class="block__fig__figcap--list--item">Html5</li>
-                            <li class="block__fig__figcap--list--item">Css3</li>
-                            <li class="block__fig__figcap--list--item">Sass</li>
-                            <li class="block__fig__figcap--list--item">JavaScript</li>
-                            <li class="block__fig__figcap--list--item">Rest Api</li>
-                        </ul>
-                        <div class="block__button">
-                            <a class="block__button--live btn" href="https://nicsalsa.github.io/Jeff_Nicole_Project4/" target="_blank">view live</a>
-                            <a class="block__button--live btn" href="https://github.com/nicsalsa/Jeff_Nicole_Project4">github</a>
-                        </div>
-                    </figcaption>
-                </figure>
-                <a href="#contact">
+                <!-- <a href="#contact">
                     <i class="fas fa-long-arrow-alt-down portfolioArrow"></i>
-                </a>
+                </a> -->
             </section>
         </div>
         <!-- portfolio section ends -->
@@ -300,33 +299,33 @@
                     <hr class="block__title--subtitle--box--line">
                     <p class="block__title--subtitle--box--description">contact me</p>
                 </div>
-                <h2 class="block__title--subtitle--heading uppercase white footerHeading">let's talk</h2>
+                <h2 class="block__title--subtitle--heading uppercase white footerHeading" data-aos="zoom-in">let's talk</h2>
             </div>
         </div>
         <section class="info wrapper">
             <div class="info__signature">
-                <div class="info__signature--text">
+                <div class="info__signature--text" data-aos="zoom-in">
                     Now that we've broken the ice a little, I'd love to hear from you! 
                 </div>
-                <a href="mailto:ensalced@gmail.com" class="info__signature--email white">
+                <a href="mailto:ensalced@gmail.com" title="Send Nicole an email" class="info__signature--email white">
                     <p class="emailLink">
                         <i class="far fa-paper-plane fontAccent"></i>
                         ensalced
-                        <span class="fontDarkGrey"> AT </span>
+                        <span class="fontDarkGrey">[at]</span>
                         gmail
-                        <span class="fontDarkGrey"> DOT </span>
+                        <span class="fontDarkGrey">[dot] </span>
                         com 
                     </p>
                 </a>
             </div>
             <div class="info__media">
-                <a class="info__media--item" target="_blank" href="https://twitter.com/nicolesCodes">
+                <a class="info__media--item" target="_blank" href="https://twitter.com/nicolesCodes" title="Follow me on Twitter">
                     <i class="fab fa-twitter fontAccent"></i>
                 </a>
-                <a class="info__media--item" target="_blank" href="https://medium.com/@nicolesCodes">
+                <a class="info__media--item" target="_blank" href="https://medium.com/@nicolesCodes" title="Read my blog">
                     <i class="fab fa-medium-m fontAccent"></i>
                 </a>
-                <a class="info__media--item" target="_blank" href="https://www.linkedin.com/in/nicolesalceda/">
+                <a class="info__media--item" target="_blank" href="https://www.linkedin.com/in/nicolesalceda/" title="Connect with me">
                     <i class="fab fa-linkedin-in fontAccent"></i>
                 </a>
             </div>
@@ -341,6 +340,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+    <script src="/src/scripts/aos.js"></script>
     <script src="public/scripts/app.js"></script>
 </body>
 </html>

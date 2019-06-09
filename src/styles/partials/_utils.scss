@@ -134,4 +134,7 @@ $color-firebase: #F4832D;
     @if $point == break78 {
         @media (max-width:335px) { @content;}
     }
+    @if $point == break80 {
+        @media (max-width:325px) { @content;}
+    }
 }

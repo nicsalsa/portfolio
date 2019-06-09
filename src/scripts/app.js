@@ -1,8 +1,10 @@
+// import 'aos';
 // konami code
 const pressed = [];
 const code = "bensbagels";
 // let frameCount = 0;
 
+//Konami Code Begins
 const finishbagels = () => {
    let bagel = document.getElementById("bagel-container");
    bagel.className = "hide";
@@ -23,7 +25,6 @@ const startbagels = () => {
    trigger();
 
 }
-
 window.addEventListener("keyup", function (e) {
    pressed.push(e.key);
    pressed.splice(-code.length - 1, pressed.length - code.length);
@@ -33,8 +34,19 @@ window.addEventListener("keyup", function (e) {
       startbagels();
    }
 });
+//Konami code ends
 
+// const $portfolio1 = $('.portfolioPiece1');
+// const $win = $(window);
+
+// $win.on('scroll', function (){
+//       let top = $win.scrollTop() / 20;
+//       $portfolio1.css('transform', 'translateX(-' + top + 'px)');
+// });
 
 $(function (){
-   $('a').smoothScroll();
+      $('a').smoothScroll();
+      AOS.init({
+            duration: 1500,
+      });
 })

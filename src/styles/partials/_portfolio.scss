@@ -4,6 +4,7 @@
    position: relative;
    background: none;
    padding: 5rem 0;
+   overflow: hidden;
    .awesome {
       @include breakPoint(break51){
          font-size: 1rem;
@@ -86,10 +87,12 @@
                padding-bottom: 0;
             }
             @include breakPoint(break40){
-               font-size: 2rem;
+               font-size: 1.5rem;
+               line-height: 1.5;
             }
             @include breakPoint(break51){
                font-size: 1rem;
+               line-height: 1.3rem;
             }
          }
 
@@ -151,6 +154,7 @@
 .alignLeft {
    text-align: left;
    transform: translate(-10%, -5%);
+   overflow: hidden;
    @include breakPoint(break13){
       transform: translate(0, -5%);
    }
@@ -174,7 +178,7 @@
 }
 //arrow down link in portfolio
 .portfolioArrow {
-   top: 95%;
+   top: 90%;
 }
 //portfolio image backgrounds
 .item1 {
